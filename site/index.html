@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free State Saturdays — Manchester, NH</title>
+    <meta name="description" content="The biggest monthly liberty meetup in New Hampshire. First Saturday of every month in Manchester. Food, families, and real conversation. Hosted by the Manchester Freefellows.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fefce8',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#d4a017',
+                            600: '#b8860b',
+                            700: '#92700c',
+                            800: '#6b5210',
+                            900: '#422d08',
+                        },
+                        dark: {
+                            50: '#f8f8f8',
+                            100: '#e0e0e0',
+                            200: '#b0b0b0',
+                            300: '#808080',
+                            400: '#505050',
+                            500: '#2a2a2a',
+                            600: '#1f1f1f',
+                            700: '#181818',
+                            800: '#121212',
+                            900: '#0a0a0a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        .gold-gradient { background: linear-gradient(135deg, #d4a017 0%, #facc15 50%, #d4a017 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .divider { width: 80px; height: 3px; background: #d4a017; }
+        .faq-answer { max-height: 0; opacity: 0; overflow: hidden; transition: all 0.3s ease; }
+        .faq-toggle:checked ~ .faq-answer { max-height: 500px; opacity: 1; padding-top: 1rem; }
+        .faq-label { cursor: pointer; }
+        .faq-label::after { content: '+'; float: right; font-size: 1.5rem; color: #d4a017; line-height: 1; }
+        .faq-toggle:checked ~ .faq-label::after { content: '\2212'; }
+    </style>
+</head>
+<body class="bg-dark-900 text-dark-100 antialiased">
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center px-6 py-20 md:py-0">
+        <div class="max-w-3xl mx-auto">
+            <p class="text-gold-500 font-semibold tracking-widest uppercase text-sm mb-6">Manchester, New Hampshire &bull; First Saturday of Every Month</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] mb-8">
+                <span class="text-dark-50">Free State</span><br>
+                <span class="gold-gradient">Saturdays</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-dark-200 leading-relaxed max-w-2xl mb-4">
+                <strong class="text-dark-50">Food. Friends. Seriously plotting world domination.</strong>
+            </p>
+            <p class="text-lg text-dark-300 leading-relaxed max-w-2xl mb-10">
+                The biggest monthly liberty gathering in New Hampshire. 100+ people showed up to our Super Bowl party last month on a week's notice. The Mayor of Manchester showed up. So did LPNH. So did a bunch of kids who didn't care about any of that.
+            </p>
+
+            <!-- Next Event Card -->
+            <div class="bg-dark-800 border border-dark-600 rounded-lg p-6 md:p-8 mb-10 max-w-lg">
+                <p class="text-gold-500 font-semibold text-sm uppercase tracking-wider mb-2">Next Gathering</p>
+                <p class="text-3xl md:text-4xl font-bold text-dark-50 mb-1">
+                    <!-- UPDATE MONTHLY -->
+                    Saturday, March 7th
+                </p>
+                <p class="text-dark-300 text-lg mb-1">
+                    6:00 PM
+                </p>
+                <p class="text-dark-300 text-lg">
+                    8025 S Willow St #205, Manchester
+                </p>
+            </div>
+
+            <a href="#details" class="inline-block bg-gold-500 hover:bg-gold-600 text-dark-900 font-bold text-lg px-8 py-4 rounded-lg transition-colors min-h-[48px]">
+                Come check it out
+            </a>
+        </div>
+    </section>
+
+    <!-- Photo: Event energy -->
+    <section class="px-6 py-12 md:py-16">
+        <div class="max-w-4xl mx-auto">
+            <img src="img/sb-halftime.jpg" alt="Packed room at the Free State Saturdays Super Bowl party — families, kids, and referee shirts" class="w-full rounded-lg shadow-lg">
+        </div>
+    </section>
+
+    <!-- What Actually Happens Section -->
+    <section class="px-6 py-20 md:py-28">
+        <div class="max-w-3xl mx-auto">
+            <div class="divider mb-6"></div>
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-50 mb-10">What actually happens here</h2>
+
+            <div class="space-y-8 text-lg text-dark-200 leading-relaxed">
+                <p>
+                    <strong class="text-dark-50">There's always food.</strong> People bring dishes, sometimes we cater. Somebody's kid is asleep in a stroller. Two guys in the corner are arguing about Austrian economics. You grab a plate and sit down next to someone you've never met who somehow already feels like an old friend.
+                </p>
+                <div class="my-8">
+                    <img src="img/conversation.jpg" alt="Two people deep in conversation over food at Free State Saturdays" class="w-full rounded-lg shadow-lg">
+                </div>
+                <p>
+                    <strong class="text-dark-50">The conversation is the point.</strong> Not a lecture. Not a panel. You'll talk about homeschooling, Bitcoin, that zoning board fight in Keene, what it was like to leave California, whether your kids should learn welding. Sometimes there's a speaker or an event theme. Our Super Bowl party had games, prizes, and a TPUSA halftime show. Sometimes it's just three hours of the best conversation you've had all month.
+                </p>
+                <p>
+                    <strong class="text-dark-50">There are quiet clubhouses with aging potlucks and no kids.</strong> This isn't that. Free State Saturdays isn't run by any official organization and you don't have to be a new mover to come. It's for everyone who's already here, too.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For Section -->
+    <section class="px-6 py-20 md:py-28 bg-dark-800">
+        <div class="max-w-3xl mx-auto">
+            <div class="divider mb-6"></div>
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-50 mb-10">You already know the feeling</h2>
+
+            <div class="space-y-6 text-lg text-dark-200 leading-relaxed mb-12">
+                <p>
+                    You bite your tongue at work. You hedge what you say on the neighborhood group chat. Your Thanksgiving dinner has a list of topics everyone silently agreed to avoid. <strong class="text-dark-50">Your views aren't fringe. You just don't have a room full of people who agree yet.</strong>
+                </p>
+                <p>
+                    Free State Saturdays is that room. The things you actually care about aren't controversial here. They're just <strong class="text-dark-50">normal</strong>.
+                </p>
+            </div>
+
+            <h3 class="text-xl font-bold text-gold-500 mb-6">This is for you if:</h3>
+            <ul class="space-y-4 text-lg text-dark-200">
+                <li class="flex items-start gap-3">
+                    <span class="text-gold-500 text-xl mt-0.5 shrink-0">&bull;</span>
+                    <span>You moved to NH for the Free State Project and <strong class="text-dark-50">you're still building your circle</strong></span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-gold-500 text-xl mt-0.5 shrink-0">&bull;</span>
+                    <span>You're <strong class="text-dark-50">thinking about the move</strong> and want to see what the community actually looks like before you commit</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-gold-500 text-xl mt-0.5 shrink-0">&bull;</span>
+                    <span>You've been here for years but <strong class="text-dark-50">your social calendar is 90% liberty events run by the same twelve people</strong></span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-gold-500 text-xl mt-0.5 shrink-0">&bull;</span>
+                    <span>You've got <strong class="text-dark-50">kids</strong> and you're done pretending library story hour is a social life</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-gold-500 text-xl mt-0.5 shrink-0">&bull;</span>
+                    <span>You just want to <strong class="text-dark-50">eat and talk to someone who gets it</strong></span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="px-6 py-20 md:py-28">
+        <div class="max-w-3xl mx-auto">
+            <div class="divider mb-6"></div>
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-50 mb-10">Who shows up</h2>
+
+            <div class="space-y-6 text-lg text-dark-200 leading-relaxed mb-12">
+                <p>
+                    <strong class="text-dark-50">Everyone.</strong> New movers who landed last week. Families who've been in NH for fifteen years. LPNH. The Free State Project. Jeremy Kauffman. The Mayor of Manchester. Tall Bill. A bunch of kids who don't care about any of those names.
+                </p>
+                <p>
+                    Our Super Bowl party in February drew <strong class="text-dark-50">100+ people</strong> on a week's notice. The regular monthly gathering has been growing every month since we started.
+                </p>
+                <div class="mt-8">
+                    <img src="img/sb-crowd.jpg" alt="100+ people watching the Super Bowl at Free State Saturdays — Patriots jerseys, projector, packed tables" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-dark-800 border border-dark-600 rounded-lg p-6 text-center">
+                    <p class="text-3xl font-bold text-gold-500 mb-2">100+</p>
+                    <p class="text-dark-300 text-sm">at the Super Bowl party</p>
+                </div>
+                <div class="bg-dark-800 border border-dark-600 rounded-lg p-6 text-center">
+                    <p class="text-3xl font-bold text-gold-500 mb-2">1st Saturday</p>
+                    <p class="text-dark-300 text-sm">every month, rain or shine</p>
+                </div>
+                <div class="bg-dark-800 border border-dark-600 rounded-lg p-6 text-center">
+                    <p class="text-3xl font-bold text-gold-500 mb-2">Growing</p>
+                    <p class="text-dark-300 text-sm">bigger every month</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="details" class="px-6 py-20 md:py-28 bg-dark-800">
+        <div class="max-w-3xl mx-auto">
+            <div class="divider mb-6"></div>
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-50 mb-10">When and where</h2>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-dark-900 border border-dark-600 rounded-lg p-6">
+                    <p class="text-gold-500 font-semibold text-sm uppercase tracking-wider mb-3">When</p>
+                    <p class="text-xl font-bold text-dark-50 mb-2">First Saturday of every month</p>
+                    <p class="text-dark-300">Doors at 6:00 PM</p>
+                    <p class="text-dark-300 mt-2 text-sm">
+                        People show up when they show up. Leave when they leave. No itinerary.
+                    </p>
+                </div>
+                <div class="bg-dark-900 border border-dark-600 rounded-lg p-6">
+                    <p class="text-gold-500 font-semibold text-sm uppercase tracking-wider mb-3">Where</p>
+                    <p class="text-xl font-bold text-dark-50 mb-2">8025 S Willow St #205</p>
+                    <p class="text-dark-300">Manchester, NH</p>
+                    <p class="text-dark-300 mt-2 text-sm">
+                        Free parking. The space holds all of us. It's not someone's garage.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-dark-900 border border-gold-700/30 rounded-lg p-6 md:p-8">
+                <p class="text-lg text-dark-200 leading-relaxed">
+                    <strong class="text-dark-50">What to bring:</strong> Yourself. Optionally: your family, a dish to share, something to drink. Bringing food is encouraged but not required &mdash; there's always plenty. No cover charge, no RSVP, no ticket.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Capture -->
+    <section class="px-6 py-20 md:py-28">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-dark-50 mb-4">
+                Don't miss the next one
+            </h2>
+            <p class="text-lg text-dark-300 mb-8">
+                Drop your email. We'll send you a reminder before each Saturday and nothing else.
+            </p>
+
+            <form name="mailing-list" method="POST" data-netlify="true" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-4">
+                <label for="email" class="sr-only">Email address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="you@email.com"
+                    class="flex-1 bg-dark-800 border border-dark-600 rounded-lg px-4 py-3 text-dark-50 placeholder-dark-400 focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 min-h-[48px] text-lg"
+                >
+                <button
+                    type="submit"
+                    class="bg-gold-500 hover:bg-gold-600 text-dark-900 font-bold px-6 py-3 rounded-lg transition-colors min-h-[48px] text-lg whitespace-nowrap"
+                >
+                    I'm in
+                </button>
+            </form>
+            <p class="text-dark-500 text-sm">No spam. Unsubscribe anytime. We're libertarians, not marketers.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="px-6 py-20 md:py-28 bg-dark-800">
+        <div class="max-w-3xl mx-auto">
+            <div class="divider mb-6"></div>
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-50 mb-10">Questions you probably have</h2>
+
+            <div class="space-y-4">
+
+                <!-- FAQ 1 -->
+                <div class="faq-item border border-dark-600 rounded-lg p-6">
+                    <input type="checkbox" id="faq1" class="faq-toggle hidden">
+                    <label for="faq1" class="faq-label text-lg font-semibold text-dark-50 block">
+                        Wait, is this a "far right" thing?
+                    </label>
+                    <div class="faq-answer text-dark-300 leading-relaxed">
+                        <p class="mb-3">
+                            According to the <em>New Hampshire Union Leader</em>, the SPLC, and your aunt's Facebook feed? Absolutely. We're the most dangerous people in New Hampshire.
+                        </p>
+                        <p class="mb-3">
+                            In reality, it's families eating food and talking about school choice, cryptocurrency, and whether you really need a permit to build a shed. If that's "far right," we'll wear it.
+                        </p>
+                        <p>
+                            We don't spend time defending ourselves to people who've already made up their minds. We spend it building the community we actually want to live in.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item border border-dark-600 rounded-lg p-6">
+                    <input type="checkbox" id="faq2" class="faq-toggle hidden">
+                    <label for="faq2" class="faq-label text-lg font-semibold text-dark-50 block">
+                        Can I bring my kids?
+                    </label>
+                    <div class="faq-answer text-dark-300 leading-relaxed">
+                        <p class="mb-3">
+                            Bring all of them. This isn't a bar meetup where kids are technically allowed but obviously unwelcome. Half the people here <em>are</em> kids. They'll find each other in about 90 seconds.
+                        </p>
+                        <p>
+                            There's no formal childcare, so you're responsible for your own. But in a room full of liberty parents, someone's always got an eye out.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item border border-dark-600 rounded-lg p-6">
+                    <input type="checkbox" id="faq3" class="faq-toggle hidden">
+                    <label for="faq3" class="faq-label text-lg font-semibold text-dark-50 block">
+                        I'm thinking about moving to NH. Can I still come?
+                    </label>
+                    <div class="faq-answer text-dark-300 leading-relaxed">
+                        <p class="mb-3">
+                            That's half the reason this exists. This is the gathering people actually show up to.
+                        </p>
+                        <p>
+                            People drive up from Massachusetts, Connecticut, even further. Come for a Saturday before you come for good.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item border border-dark-600 rounded-lg p-6">
+                    <input type="checkbox" id="faq4" class="faq-toggle hidden">
+                    <label for="faq4" class="faq-label text-lg font-semibold text-dark-50 block">
+                        Is there a cost?
+                    </label>
+                    <div class="faq-answer text-dark-300 leading-relaxed">
+                        <p>
+                            No. Free to attend. Bring a dish if you want, show up empty-handed if you don't. There's always food. Nobody's keeping score.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item border border-dark-600 rounded-lg p-6">
+                    <input type="checkbox" id="faq5" class="faq-toggle hidden">
+                    <label for="faq5" class="faq-label text-lg font-semibold text-dark-50 block">
+                        Do I need to be a Free State Project member?
+                    </label>
+                    <div class="faq-answer text-dark-300 leading-relaxed">
+                        <p>
+                            No. You don't need to have signed the pledge, moved to NH, read Rothbard, or passed a libertarian purity test. If you're liberty-curious and not a cop, you're welcome.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item border border-dark-600 rounded-lg p-6">
+                    <input type="checkbox" id="faq6" class="faq-toggle hidden">
+                    <label for="faq6" class="faq-label text-lg font-semibold text-dark-50 block">
+                        What if I don't know anyone?
+                    </label>
+                    <div class="faq-answer text-dark-300 leading-relaxed">
+                        <p class="mb-3">
+                            Good. That means this event is doing its job.
+                        </p>
+                        <p>
+                            Everyone here was new once. Most people came alone the first time. Grab food, sit down, introduce yourself. The barrier to entry is literally a handshake.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-item border border-dark-600 rounded-lg p-6">
+                    <input type="checkbox" id="faq7" class="faq-toggle hidden">
+                    <label for="faq7" class="faq-label text-lg font-semibold text-dark-50 block">
+                        Who runs this?
+                    </label>
+                    <div class="faq-answer text-dark-300 leading-relaxed">
+                        <p class="mb-3">
+                            The <strong class="text-dark-100">Manchester Freefellows</strong>. Not the Free State Project, not LPNH, not any official organization. Just people who wanted a regular gathering and made it happen.
+                        </p>
+                        <p>
+                            Follow along at <a href="https://freestate.app/freefellows" class="text-gold-500 hover:text-gold-400 underline">freestate.app/freefellows</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="faq-item border border-dark-600 rounded-lg p-6">
+                    <input type="checkbox" id="faq8" class="faq-toggle hidden">
+                    <label for="faq8" class="faq-label text-lg font-semibold text-dark-50 block">
+                        Is this a political rally or a protest?
+                    </label>
+                    <div class="faq-answer text-dark-300 leading-relaxed">
+                        <p class="mb-3">
+                            No signs, no chanting, no candidates working the room. It's dinner with interesting people. Politics comes up because it's interesting to us, not because someone planned a program around it.
+                        </p>
+                        <p>
+                            If you're looking for campaign energy, try a State House rally. If you're looking for community, this is it.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA / Footer -->
+    <footer class="px-6 py-20 md:py-28">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-dark-50 mb-6">
+                Stop scrolling.<br><span class="text-gold-500">Come eat with us.</span>
+            </h2>
+            <p class="text-lg text-dark-300 mb-8 max-w-xl mx-auto">
+                <!-- UPDATE MONTHLY -->
+                Next gathering: <strong class="text-dark-50">Saturday, March 7th at 6pm</strong><br>
+                8025 S Willow St #205, Manchester, NH.<br>
+                No RSVP. No ticket. Just walk in.
+            </p>
+            <a href="#details" class="inline-block bg-gold-500 hover:bg-gold-600 text-dark-900 font-bold text-lg px-8 py-4 rounded-lg transition-colors min-h-[48px] mb-12">
+                See when and where
+            </a>
+
+            <div class="border-t border-dark-700 pt-8 mt-8">
+                <p class="text-dark-400 text-sm">
+                    Free State Saturdays &mdash; Hosted by the <a href="https://freestate.app/freefellows" class="text-dark-300 hover:text-gold-500 underline">Manchester Freefellows</a>
+                </p>
+                <p class="text-dark-500 text-xs mt-2">
+                    Manchester, New Hampshire &bull; First Saturday of every month
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

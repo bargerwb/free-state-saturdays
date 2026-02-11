@@ -53,6 +53,14 @@ Last updated: February 11, 2026
 - **Backend for actual mailing list**: Not yet decided. Separate conversation.
 - **Free tier**: 100 submissions/month
 
+## TODO (Next Session)
+
+- **GitHub repo**: Git is initialized locally, SSH auth works (`ssh -T git@github.com` confirms `bargerwb`). Blocked on creating the repo — `gh` CLI not installed and `brew` not on PATH. Either fix PATH, install gh, or just create the repo manually at github.com/new (`free-state-saturdays`, private, empty). Then `git remote add origin git@github.com:bargerwb/free-state-saturdays.git && git push -u origin main`.
+- **Connect Netlify to GitHub**: Once repo exists, link it in Netlify dashboard so pushes auto-deploy. Set publish directory to `site/`.
+- **Mailing list backend**: Netlify Forms captures emails for now (100/month free). Need to decide on actual email tool (Mailchimp, ConvertKit, etc.) when list grows.
+- **More photos**: Bill was sourcing photos from the board. Super Bowl + Christmas party covered. Could use more variety.
+- **Monthly date update**: index.html has `<!-- UPDATE MONTHLY -->` comments marking the two places where the next event date appears.
+
 ## What NOT to Do
 
 - Don't promise "always free, always potluck"
